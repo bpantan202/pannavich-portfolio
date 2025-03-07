@@ -50,28 +50,28 @@ const Home: FC = () => {
         <div className="text-2xl font-bold underline underline-offset-2 pb-2">
           Project
         </div>
-        <Link to="/project/HotelViz">▪️ HotelViz 🏨</Link>
-        <Link to="/project/SpaceRally">▪️ SpaceRally 🚀</Link>
-        {/* <Link to="/project/ScopusRS">▪️ Scopus Research 📚</Link> */}
-        <Link to="/project/Guru">▪️ Guru 🔎</Link>
+        <Link to="/project/HotelViz" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ HotelViz 🏨</Link>
+        <Link to="/project/SpaceRally" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ SpaceRally 🚀</Link>
+        {/* <Link to="/project/ScopusRS" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ Scopus Research 📚</Link> */}
+        <Link to="/project/Guru" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ Guru 🔎</Link>
       </div>
 
       <div className="flex flex-col gap-4 text-sm font-semibold">
         <a
           href="mailto:pannavich.tan@gmail.com"
           target="_blank"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 transition-transform duration-200 hover:-translate-y-0.5"
         >
           <img src={mailIcon} alt="Git logo" className="w-5" />
-          <div>pannavich.tan@gmail.com</div>
+          <div className="underline">pannavich.tan@gmail.com</div>
         </a>
         <a
           href="https://github.com/bpantan202/"
           target="_blank"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 transition-transform duration-200 hover:-translate-y-0.5"
         >
           <img src={gitLogo} alt="Git logo" className="w-5" />
-          <div>https://github.com/bpantan202/</div>
+          <div className="underline">https://github.com/bpantan202/</div>
         </a>
         <div className="flex items-center gap-2">
           <img src={phoneIcon} alt="Git logo" className="w-5" />
