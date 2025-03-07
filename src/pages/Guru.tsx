@@ -8,8 +8,9 @@ import imgC from "/img/guru/C.png";
 const Guru: FC = () => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex">
+      <div>
         <h1>GURU: Question and Answer Platform</h1>
+        <hr className="mt-5" />
       </div>
       <h2 className="flex">
         <div className="font-bold mr-1">Tools:</div>
@@ -37,13 +38,16 @@ const Guru: FC = () => {
         <img src={imgC} className="w-full object-contain" />
       </div>
 
-      <div className="w-12">
+      <div>
         <a
           href="https://github.com/bpantan202/GURU-Question-and-Answer-Platform.git"
           target="_blank"
-          className="w-8"
+          className="flex flex-row items-center gap-1.5"
         >
-          <img src={gitLogo} alt="Git logo" />
+          <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
+          <div className="font-semibold text-sm underline underline-offset-1">
+            https://github.com/bpantan202/GURU-Question-and-Answer-Platform.git
+          </div>
         </a>
       </div>
     </div>

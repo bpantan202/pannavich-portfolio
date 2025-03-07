@@ -13,8 +13,9 @@ import imgH from "/img/hotelviz/H.png";
 const HotelViz: FC = () => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex">
+      <div>
         <h1>HotelViz: Hotel Booking Platform</h1>
+        <hr className="mt-5" />
       </div>
       <h2 className="flex">
         <div className="font-bold mr-1">Tools:</div>
@@ -58,7 +59,9 @@ const HotelViz: FC = () => {
         <img src={imgD} className="w-full object-contain" />
       </div>
       <div>
-        <div className="font-bold text-xl mb-2">Manage Hotel Page (For Admin)</div>
+        <div className="font-bold text-xl mb-2">
+          Manage Hotel Page (For Admin)
+        </div>
         <img src={imgE} className="w-full object-contain" />
         <div className="flex flex-col gap-5 pt-5 sm:flex-row sm:gap-0">
           <img src={imgF} className="w-full sm:w-1/2 object-contain sm:pr-3" />
@@ -70,13 +73,16 @@ const HotelViz: FC = () => {
         <img src={imgH} className="w-full object-contain" />
       </div>
 
-      <div className="w-12">
+      <div>
         <a
           href="https://github.com/bpantan202/HotelViz.git"
           target="_blank"
-          className="w-8"
+          className="flex flex-row items-center gap-1.5"
         >
-          <img src={gitLogo} alt="Git logo" />
+          <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
+          <div className="font-semibold text-sm underline underline-offset-1">
+            https://github.com/bpantan202/HotelViz.git
+          </div>
         </a>
       </div>
     </div>

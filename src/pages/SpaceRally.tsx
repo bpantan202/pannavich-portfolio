@@ -10,8 +10,9 @@ import gitLogo from "/img/github-mark.svg";
 const SpaceRally: FC = () => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex">
+      <div>
         <h1>Space-Rally: Mini Game</h1>
+        <hr className="mt-5" />
       </div>
       <h2 className="flex">
         <div className="font-bold mr-1">Tools:</div>
@@ -26,7 +27,8 @@ const SpaceRally: FC = () => {
       <div>
         <div className="font-bold mr-1">Rules</div>
         <span className="block mb-4" />
-        - On each player's turn. The player has to roll the dice, Number of walks will be followed by the dice.
+        - On each player's turn. The player has to roll the dice, Number of
+        walks will be followed by the dice.
         <span className="block mb-4" />
         - During walking, the player can’t walk back to previously visited
         blocks.The player can visit the planet only on the last walk each turn
@@ -60,13 +62,17 @@ const SpaceRally: FC = () => {
         <div className="font-bold text-xl mb-2">Title screen`</div>
         <img src={imgA} className="w-full object-contain" />
       </div>
-      <div className="w-12">
+
+      <div>
         <a
           href="https://github.com/bpantan202/Space-Rally.git"
           target="_blank"
-          className="w-8"
+          className="flex flex-row items-center gap-1.5"
         >
-          <img src={gitLogo} alt="Git logo" />
+          <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
+          <div className="font-semibold text-sm underline underline-offset-1">
+            https://github.com/bpantan202/Space-Rally.git
+          </div>
         </a>
       </div>
     </div>

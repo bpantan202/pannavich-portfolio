@@ -1,34 +1,83 @@
 import { FC } from "react";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
+import mePic from "/img/ME.jpg";
+import axonsPic from "/img/axons.png";
+import cpfPic from "/img/cpf.png";
+import gitLogo from "/img/github-mark.svg";
+import mailIcon from "/img/mail.png";
+import phoneIcon from "/img/phone.png";
 
 const Home: FC = () => {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <div className="flex">
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex flex-col gap-15">
+      <div className="flex flex-col gap-10 items-center md:flex-row">
+        <img
+          src={mePic}
+          alt="Profile"
+          className="w-48 h-48 rounded-full object-cover"
+        />
+
+        <div className="flex flex-col items-center md:items-start">
+          <h1>Pannavich Tanyavichitkul</h1>
+          <div className="font-semibold text-xl mt-6">
+            Computer Engineering & Digital Technology
+          </div>
+          <div>Faculty of Engineering, Chulalongkorn University</div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div className="flex flex-col gap-2">
+        <div className="text-2xl font-bold underline underline-offset-2 pb-2">
+          Experience
+        </div>
+        <div className="flex justify-between flex-col sm:flex-row gap-2">
+          <div className="text-2xl font-bold">AXONS Corporate (CPF)</div>
+          <div className="flex gap-3">
+            <img
+              src={axonsPic}
+              alt="axons logo"
+              className=" h-8 object-cover"
+            />
+            <img src={cpfPic} alt="cpf logo" className="h-8 object-cover" />
+          </div>
+        </div>
+        <div className="text-lg font-semibold">Role : Frontend Developer</div>
+        <div>June 2024 – July 2024</div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="flex flex-col gap-2">
+        <div className="text-2xl font-bold underline underline-offset-2 pb-2">
+          Project
+        </div>
+        <Link to="/project/HotelViz">▪️ HotelViz 🏨</Link>
+        <Link to="/project/SpaceRally">▪️ SpaceRally 🚀</Link>
+        {/* <Link to="/project/ScopusRS">▪️ Scopus Research 📚</Link> */}
+        <Link to="/project/Guru">▪️ Guru 🔎</Link>
+      </div>
+
+      <div className="flex flex-col gap-4 text-sm font-semibold">
+        <a
+          href="mailto:pannavich.tan@gmail.com"
+          target="_blank"
+          className="flex items-center gap-2"
+        >
+          <img src={mailIcon} alt="Git logo" className="w-5" />
+          <div>pannavich.tan@gmail.com</div>
+        </a>
+        <a
+          href="https://github.com/bpantan202/"
+          target="_blank"
+          className="flex items-center gap-2"
+        >
+          <img src={gitLogo} alt="Git logo" className="w-5" />
+          <div>https://github.com/bpantan202/</div>
+        </a>
+        <div className="flex items-center gap-2">
+          <img src={phoneIcon} alt="Git logo" className="w-5" />
+          <div>098-824-7373</div>
+        </div>
+      </div>
     </div>
   );
 };
