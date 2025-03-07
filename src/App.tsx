@@ -5,12 +5,14 @@ import HotelViz from "./pages/HotelViz";
 import ScopusRS from "./pages/ScopusRS";
 import SpaceRally from "./pages/SpaceRally";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="h-[50px]"/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/ScopusRS" element={<ScopusRS />} />
