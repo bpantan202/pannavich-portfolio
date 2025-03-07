@@ -1,0 +1,9 @@
+<script>
+  (function () {
+    var path = window.location.pathname;
+    var base = "/pannavich-portfolio/";
+    if (path.startsWith(base) && !window.location.hash) {
+      window.location.replace(base + "#/" + path.substring(base.length));
+    }
+  })();
+</script>

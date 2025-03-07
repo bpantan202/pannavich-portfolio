@@ -4,6 +4,7 @@ import Guru from "./pages/Guru";
 import HotelViz from "./pages/HotelViz";
 import ScopusRS from "./pages/ScopusRS";
 import SpaceRally from "./pages/SpaceRally";
+import NotFound from "./pages/NotFound";
 import "./App.css";
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ScopusRS" element={<ScopusRS />} />
-        <Route path="/HotelViz" element={<HotelViz />} />
-        <Route path="/SpaceRally" element={<SpaceRally />} />
-        <Route path="/Guru" element={<Guru />} />
+        <Route path="/project/ScopusRS" element={<ScopusRS />} />
+        <Route path="/project/HotelViz" element={<HotelViz />} />
+        <Route path="/project/SpaceRally" element={<SpaceRally />} />
+        <Route path="/project/Guru" element={<Guru />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
