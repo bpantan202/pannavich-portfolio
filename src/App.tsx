@@ -13,14 +13,14 @@ function App() {
       
       <div>
         <Routes>
-          <Route path="/pannavich-portfolio/" element={<Home />} />
-          <Route path="/pannavich-portfolio/ScopusRS" element={<ScopusRS />} />
-          <Route path="/pannavich-portfolio/HotelViz" element={<HotelViz />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/ScopusRS" element={<ScopusRS />} />
+          <Route path="/HotelViz" element={<HotelViz />} />
           <Route
-            path="/pannavich-portfolio/SpaceRally"
+            path="/SpaceRally"
             element={<SpaceRally />}
           />{" "}
-          <Route path="/pannavich-portfolio/Guru" element={<Guru />} />
+          <Route path="/Guru" element={<Guru />} />
         </Routes>
       </div>
     </>
