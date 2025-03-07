@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Guru from "./pages/Guru";
 import HotelViz from "./pages/HotelViz";
@@ -9,15 +9,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/ScopusRS" element={<ScopusRS />} />
-          <Route path="/HotelViz" element={<HotelViz />} />
-          <Route path="/SpaceRally" element={<SpaceRally />} />{" "}
-          <Route path="/Guru" element={<Guru />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ScopusRS" element={<ScopusRS />} />
+        <Route path="/HotelViz" element={<HotelViz />} />
+        <Route path="/SpaceRally" element={<SpaceRally />} />
+        <Route path="/Guru" element={<Guru />} />
+      </Routes>
     </>
   );
 }
