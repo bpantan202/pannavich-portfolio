@@ -13,14 +13,14 @@ function App() {
       
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/ScopusRS" element={<ScopusRS />} />
-          <Route path="/HotelViz" element={<HotelViz />} />
+          <Route path="" element={<Home />} />
+          <Route path="ScopusRS" element={<ScopusRS />} />
+          <Route path="HotelViz" element={<HotelViz />} />
           <Route
-            path="/SpaceRally"
+            path="SpaceRally"
             element={<SpaceRally />}
           />{" "}
-          <Route path="/Guru" element={<Guru />} />
+          <Route path="Guru" element={<Guru />} />
         </Routes>
       </div>
     </>
