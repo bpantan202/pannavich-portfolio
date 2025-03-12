@@ -11,7 +11,7 @@ const SpaceRally: FC = () => {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1>Space-Rally: Mini Game</h1>
+        <h1>Space-Rally: Mini Game 🚀</h1>
         <hr className="mt-5" />
       </div>
       <h2 className="flex">
@@ -59,7 +59,7 @@ const SpaceRally: FC = () => {
         </div>
       </div>
       <div>
-        <div className="font-bold text-xl mb-2">Title screen`</div>
+        <div className="font-bold text-xl mb-2">Title screen</div>
         <img src={imgA} className="w-full object-contain" />
       </div>
 
@@ -67,7 +67,7 @@ const SpaceRally: FC = () => {
         <a
           href="https://github.com/bpantan202/Space-Rally.git"
           target="_blank"
-          className="flex flex-row items-center gap-1.5"
+          className="flex flex-row items-center gap-1.5 w-fit"
         >
           <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
           <div className="font-semibold text-sm underline underline-offset-1">

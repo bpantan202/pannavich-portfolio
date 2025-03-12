@@ -14,7 +14,7 @@ const HotelViz: FC = () => {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1>HotelViz: Hotel Booking Platform</h1>
+        <h1>HotelViz: Hotel Booking Platform 🏨</h1>
         <hr className="mt-5" />
       </div>
       <h2 className="flex">
@@ -77,7 +77,7 @@ const HotelViz: FC = () => {
         <a
           href="https://github.com/bpantan202/HotelViz.git"
           target="_blank"
-          className="flex flex-row items-center gap-1.5"
+          className="flex flex-row items-center gap-1.5 w-fit"
         >
           <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
           <div className="font-semibold text-sm underline underline-offset-1">

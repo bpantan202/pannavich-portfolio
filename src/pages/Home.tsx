@@ -33,13 +33,13 @@ const Home: FC = () => {
       detail: "Mini Game",
       tools: "Tools: Java",
     },
-    // {
-    //   title: "Scopus Research",
-    //   pageRef: "/project/ScopusRS",
-    //   imgSrc: "img/BP.png",
-    //   detail: "Data Analytics",
-    //   tools: "Tools: ",
-    // },
+    {
+      title: "Scopus Research",
+      pageRef: "/project/ScopusRS",
+      imgSrc: "img/scopus/X.png",
+      detail: "Data Analytics",
+      tools: "Tools: Python, Selenium, PySpark, Plotly, Streamlit, K-Means Clustering, Power BI, Streamlit",
+    },
     {
       title: "GURU",
       pageRef: "/project/Guru",
@@ -130,7 +130,7 @@ const Home: FC = () => {
         <a
           href="mailto:pannavich.tan@gmail.com"
           target="_blank"
-          className="flex items-center gap-2 transition-transform duration-200 hover:-translate-y-0.5"
+          className="flex items-center gap-2 w-fit"
         >
           <img src={mailIcon} alt="Git logo" className="w-5" />
           <div className="underline">pannavich.tan@gmail.com</div>
@@ -138,7 +138,7 @@ const Home: FC = () => {
         <a
           href="https://github.com/bpantan202/"
           target="_blank"
-          className="flex items-center gap-2 transition-transform duration-200 hover:-translate-y-0.5"
+          className="flex items-center gap-2 w-fit"
         >
           <img src={gitLogo} alt="Git logo" className="w-5" />
           <div className="underline">https://github.com/bpantan202/</div>

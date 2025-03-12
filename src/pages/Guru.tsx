@@ -9,7 +9,7 @@ const Guru: FC = () => {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1>GURU: Question and Answer Platform</h1>
+        <h1>GURU: Question and Answer Platform 🔎</h1>
         <hr className="mt-5" />
       </div>
       <h2 className="flex">
@@ -42,7 +42,7 @@ const Guru: FC = () => {
         <a
           href="https://github.com/bpantan202/GURU-Question-and-Answer-Platform.git"
           target="_blank"
-          className="flex flex-row items-center gap-1.5"
+          className="flex flex-row items-center gap-1.5 w-fit"
         >
           <img src={gitLogo} alt="Git logo" className="w-5 object-contain" />
           <div className="font-semibold text-sm underline underline-offset-1">
