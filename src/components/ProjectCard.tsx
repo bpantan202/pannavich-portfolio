@@ -33,7 +33,6 @@ export default function ProjectCard({
           </button>
         </div>
       </div>
-      ={" "}
     </Link>
   );
 }
