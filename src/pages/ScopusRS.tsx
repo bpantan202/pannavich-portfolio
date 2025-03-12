@@ -4,6 +4,8 @@ import imgA from "/img/scopus/A.png";
 import imgB from "/img/scopus/B.png";
 import imgC from "/img/scopus/C.png";
 import imgD from "/img/scopus/D.png";
+import imgE from "/img/scopus/E.png";
+import imgF from "/img/scopus/F.png";
 import gitLogo from "/img/github-mark.svg";
 
 const ScopusRS: FC = () => {
@@ -38,11 +40,18 @@ const ScopusRS: FC = () => {
       </div>
 
       <div>
+        <img src={imgF} className="w-full object-contain" />
+      </div>
+      <div>
         <img src={imgA} className="w-full object-contain" />
       </div>
       <div>
         <div className="font-bold text-xl mb-2">Reference research from</div>
         <img src={imgB} className="w-full object-contain" />
+      </div>
+      <div>
+        <div className="font-bold text-xl mb-2">K-Means</div>
+        <img src={imgE} className="w-full object-contain" />
       </div>
       <div>
         <div className="font-bold text-xl mb-2">Internationality</div>
