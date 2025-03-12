@@ -33,13 +33,13 @@ const Home: FC = () => {
       detail: "Mini Game",
       tools: "Tools: Java",
     },
-    // {
-    //   title: "Scopus Research",
-    //   pageRef: "/project/ScopusRS",
-    //   imgSrc: "img/BP.png",
-    //   detail: "Data Analytics",
-    //   tools: "Tools: ",
-    // },
+    {
+      title: "Scopus Research",
+      pageRef: "/project/ScopusRS",
+      imgSrc: "img/BP.png",
+      detail: "Data Analytics",
+      tools: "Tools: ",
+    },
     {
       title: "GURU",
       pageRef: "/project/Guru",
