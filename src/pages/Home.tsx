@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
 
 import mePic from "/img/ME.jpg";
 import axonsPic from "/img/axons.png";
@@ -7,8 +6,49 @@ import cpfPic from "/img/cpf.png";
 import gitLogo from "/img/github-mark.svg";
 import mailIcon from "/img/mail.png";
 import phoneIcon from "/img/phone.png";
+import ProjectCard from "../components/ProjectCard";
 
 const Home: FC = () => {
+  interface Project {
+    title: String;
+    pageRef: string;
+    imgSrc: string;
+    detail: String;
+    tools: String;
+  }
+
+  const projectList: Project[] = [
+    {
+      title: "HotelViz",
+      pageRef: "/project/HotelViz",
+      imgSrc: "img/hotelviz/B.png",
+      detail: "Hotel Booking Platform",
+      tools:
+        "Tools: React, TypeScript, Next.js, Node.js, Express.js, Redux, Jest, Cypress, Docker, Mongoose",
+    },
+    {
+      title: "SpaceRally",
+      pageRef: "/project/SpaceRally",
+      imgSrc: "img/space/B.png",
+      detail: "Mini Game",
+      tools: "Tools: Java",
+    },
+    // {
+    //   title: "Scopus Research",
+    //   pageRef: "/project/ScopusRS",
+    //   imgSrc: "img/BP.png",
+    //   detail: "Data Analytics",
+    //   tools: "Tools: ",
+    // },
+    {
+      title: "GURU",
+      pageRef: "/project/Guru",
+      imgSrc: "img/guru/B.png",
+      detail: "Question and Answer Platform",
+      tools: "Tools: JavaScript, HTML, CSS, MongoDB, Amazon AWS",
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-15">
       <div className="flex flex-col gap-10 items-center md:flex-row">
@@ -46,14 +86,44 @@ const Home: FC = () => {
         <div>June 2024 – July 2024</div>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         <div className="text-2xl font-bold underline underline-offset-2 pb-2">
           Project
         </div>
-        <Link to="/project/HotelViz" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ HotelViz 🏨</Link>
-        <Link to="/project/SpaceRally" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ SpaceRally 🚀</Link>
+        <div className="flex flex-nowrap gap-5 overflow-x-scroll w-full py-3">
+          {projectList.map(
+            ({ title, pageRef, imgSrc, detail, tools }, index) => (
+              <ProjectCard
+                key={index}
+                title={title}
+                pageRef={pageRef}
+                imgSrc={imgSrc}
+                detail={detail}
+                tools={tools}
+              />
+            )
+          )}
+        </div>
+
+        {/* <Link
+          to="/project/HotelViz"
+          className="transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          ▪️ HotelViz 🏨
+        </Link>
+        <Link
+          to="/project/SpaceRally"
+          className="transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          ▪️ SpaceRally 🚀
+        </Link> */}
         {/* <Link to="/project/ScopusRS" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ Scopus Research 📚</Link> */}
-        <Link to="/project/Guru" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ Guru 🔎</Link>
+        {/* <Link
+          to="/project/Guru"
+          className="transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          ▪️ Guru 🔎
+        </Link> */}
       </div>
 
       <div className="flex flex-col gap-4 text-sm font-semibold">
