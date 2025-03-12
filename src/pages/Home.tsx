@@ -41,7 +41,7 @@ const Home: FC = () => {
       tools: "Tools: Python, Selenium, PySpark, Plotly, Streamlit, K-Means Clustering, Power BI, Streamlit",
     },
     {
-      title: "GURU",
+      title: "GURU 🔎",
       pageRef: "/project/Guru",
       imgSrc: "img/guru/B.png",
       detail: "Question and Answer Platform",
@@ -51,13 +51,12 @@ const Home: FC = () => {
 
   return (
     <div className="flex flex-col gap-15">
-      <div className="flex flex-col gap-10 items-center md:flex-row">
+      <div className="flex flex-col gap-10 items-center md:flex-row md:justify-center">
         <img
           src={mePic}
           alt="Profile"
           className="w-48 h-48 rounded-full object-cover"
         />
-
         <div className="flex flex-col items-center md:items-start">
           <h1>Pannavich Tanyavichitkul</h1>
           <div className="font-semibold text-xl mt-6">
@@ -82,7 +81,7 @@ const Home: FC = () => {
             <img src={cpfPic} alt="cpf logo" className="h-8 object-cover" />
           </div>
         </div>
-        <div className="text-lg font-semibold">Role : Frontend Developer</div>
+        <div className="text-lg font-semibold">Frontend Developer Intern</div>
         <div>June 2024 – July 2024</div>
       </div>
 
@@ -104,26 +103,6 @@ const Home: FC = () => {
             )
           )}
         </div>
-
-        {/* <Link
-          to="/project/HotelViz"
-          className="transition-transform duration-200 hover:-translate-y-0.5"
-        >
-          ▪️ HotelViz 🏨
-        </Link>
-        <Link
-          to="/project/SpaceRally"
-          className="transition-transform duration-200 hover:-translate-y-0.5"
-        >
-          ▪️ SpaceRally 🚀
-        </Link> */}
-        {/* <Link to="/project/ScopusRS" className="transition-transform duration-200 hover:-translate-y-0.5">▪️ Scopus Research 📚</Link> */}
-        {/* <Link
-          to="/project/Guru"
-          className="transition-transform duration-200 hover:-translate-y-0.5"
-        >
-          ▪️ Guru 🔎
-        </Link> */}
       </div>
 
       <div className="flex flex-col gap-4 text-sm font-semibold">
